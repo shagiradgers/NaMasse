@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FAQ</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <item>
+        <property name="text">
+         <string>Индексс массы тела - величина, позволяющая</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>оценить степень соответствия массы человека и</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>его роста и тем самым косвенно судить о том,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>является ли масса недостаточной,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>нормальной или избыточной.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>КБЖИУ - калории, белки, жиры,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>индекс массы тела ,углеводы</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Количество калорий в пище - это единицы энергии,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>которые нам поставляет данный продукт.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Белок является важным строительным материалом нашего организма.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Из него состоит каждая клетка организма,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>он входит в состав всех тканей и органов. </string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Жиры – это органические соединения, состоящие из сложных эфиров</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>глицерина, жирных кислот и веществ с высокой биоактивностью.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Углеводы - это основной ингредиент большинства пищевых продуктов,</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>который служит источником энергии для человеческого организма. </string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

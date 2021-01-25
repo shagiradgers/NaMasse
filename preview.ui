@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Привет</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QListWidget" name="listWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>Приветствую.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Краткий экскурс по программе:</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>При нажати на кнопку</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>'Ввести данные'</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>открывается диалоговое окно</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>для ввода данных.</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>При нажатии на кнопку</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>'Сохранить в таблицу' все расчеты </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>сохраняются в xlsx таблице</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>При нажатии на 'Построить график'</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Строится график вашего КБЖИУ</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>И сохраняется в xls таблице</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Для построения графика</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>нужно минимум 2 раза</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>произвести вычисления</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>При нажати на 'Рекомендации'</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Открывается окно, где вы можете</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Увидеть рекомендации по питанию</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Вы можете удалить саму строку</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Или поменять входные данные</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Двойным нажатием по любому элементу строки</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>При нажати на кнопку ' Настройки' </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Откроется меню настроек, где вы сможете</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Поменять цветовую схему приложения</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Прочитать про функции кнопок</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Узнать что такое КБЖИУ и т.д.</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
